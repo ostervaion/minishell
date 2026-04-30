@@ -6,7 +6,7 @@
 #    By: juetxeba <juetxeba@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/11 12:04:57 by juetxeba          #+#    #+#              #
-#    Updated: 2025/06/02 17:39:21 by juetxeba         ###   ########.fr        #
+#    Updated: 2026/04/30 14:00:39 by juetxeba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
@@ -32,19 +32,19 @@ AR = ar
 all: $(NAME)
 
 $(NAME): $(OBJECTS) $(BOBJECTS)
-	$(AR) -r $@ $?
+	@$(AR) -r $@ $?
 
 bonus: all
 
 
 %.o: %.c libft.h
-	$(CC) -c $(CFLAGS) $< -o $@
+	@$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	rm -f $(OBJECTS) $(BOBJECTS)
+	@rm -f $(OBJECTS) $(BOBJECTS)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 

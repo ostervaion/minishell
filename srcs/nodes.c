@@ -6,7 +6,7 @@
 /*   By: martimar <martimar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 16:40:12 by juetxeba          #+#    #+#             */
-/*   Updated: 2025/06/17 15:30:58 by martimar         ###   ########.fr       */
+/*   Updated: 2026/04/30 13:41:44 by juetxeba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,10 @@ char	*ft_add_commed_data(char **str, int *coms, int *coms2, int *check_error)
 char	*ft_add_noncommed_data(t_data *node, char **str, int *check_error)
 {
 	char	*aux;
-	char	*aux2;
 	int		export;
 
 	export = ft_strcmp_custom(node -> command, "export");
 	aux = *str;
-	aux2 = 0;
 	while (**str && !ft_isspace(**str) && (**str != '\'' || **str != '"'))
 	{
 		if (!export && (**str == '<' || **str == '>'))
@@ -76,10 +74,8 @@ char	*ft_add_noncommed_data(t_data *node, char **str, int *check_error)
 int	ft_insert_data_to_node(t_data *node, char *str)
 {
 	int		check_error;
-	char	*aux;
 
 	check_error = 1;
-	aux = NULL;
 	while (*str && check_error)
 	{
 		while (*str && ft_isspace(*str))

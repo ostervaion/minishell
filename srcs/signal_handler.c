@@ -6,7 +6,7 @@
 /*   By: martimar <martimar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 16:53:09 by juetxeba          #+#    #+#             */
-/*   Updated: 2025/06/24 20:04:45 by martimar         ###   ########.fr       */
+/*   Updated: 2026/04/30 13:42:12 by juetxeba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,8 @@ void	sigpipe_handler(int sig, int pid)
 
 void	sigttin_handler(int sig)
 {
-	pid_t	pgid;
 
 	(void)sig;
-	pgid = 0;
 	printf("SIGTTIN\n");
 }
 

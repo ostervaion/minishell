@@ -6,7 +6,7 @@
 /*   By: martimar <martimar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 15:17:42 by martimar          #+#    #+#             */
-/*   Updated: 2025/06/23 11:29:38 by martimar         ###   ########.fr       */
+/*   Updated: 2026/04/30 13:41:57 by juetxeba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 /*Start of the echo command, it check if the command flags are valid or not*/
 void	ft_echo_command(t_mini *mini, t_data *list)
 {
-	int		i;
 	int		flag;
 	char	*str;
 	char	*temp;
 
 	flag = 0;
-	i = 1;
 	str = NULL;
 	if (!(list->arg))
 		return ((void)printf("\n"));

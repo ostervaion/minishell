@@ -6,14 +6,14 @@
 /*   By: martimar <martimar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:02:00 by martimar          #+#    #+#             */
-/*   Updated: 2025/06/23 10:13:47 by martimar         ###   ########.fr       */
+/*   Updated: 2026/04/30 13:56:32 by juetxeba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MINISHELL_H
 # define MINISHELL_H
 
-# include "libft/libft.h"
+# include "libft.h"
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
